@@ -1,0 +1,108 @@
+.showSidebar {
+  width: 250px;
+}
+.hideSidebar {
+  width: 100px;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #eaf8ff;
+  transition: all 0.5s ease;
+  z-index: 1000;
+  /* overflow: auto; */
+}
+.sidebar .logo_details {
+  display: flex;
+  margin: 10px 10px 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.sidebar .logo_details img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+.sidebar.sidebar.hideSidebar .logo_details img {
+  width: 60px;
+  height: 60px;
+}
+
+.sidebar .all_nav{
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar .all_nav nav.nav {
+  align-items: center;
+  height: 75%;
+}
+.sidebar .all_nav nav.nav ul {
+  list-style: none;
+  font-size: 1.2rem;
+  margin: 1rem 0 0 0;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.sidebar.hideSidebar .all_nav nav.nav ul {
+  transition: all 0.5s ease-out;
+  font-size: 1.5rem;
+}
+.sidebar.showSidebar .all_nav nav.nav ul {
+  transition: all 0.5s ease-in;
+}
+.sidebar .all_nav nav.nav ul li a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #ff9800;
+  font-weight: 600;
+  margin: 0.4rem auto;
+  padding: 10px;
+  text-decoration: none;
+}
+.sidebar.hideSidebar .all_nav nav.nav ul li a {
+  justify-content: center;
+}
+.sidebar .all_nav nav.nav ul li a:hover {
+  color: #f55777;
+  background-color: #fefefe;
+  border-radius: 15px;
+}
+.sidebar .all_nav nav.nav .active{
+  color: #f55777;
+  background-color: #ffffff;
+  border: 1px solid #f55777;
+  border-radius: 15px;
+}
+.sidebar .all_nav nav.nav ul li p {
+  margin: 0 0 0 1rem;
+  padding: 0;
+}
+.sidebar.hideSidebar .all_nav nav.nav ul li p {
+  display: none;
+}
+.sidebar.showSidebar .all_nav nav.nav ul li p {
+  transition: all 0.3s ease-in;
+}
+.sidebar .all_nav .userSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sidebar.hideSidebar .all_nav .userSide {
+  padding: 0 5px;
+}
+.sidebar .all_nav .userSide p {
+  margin: 0 10px 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-weight: 500;
+}

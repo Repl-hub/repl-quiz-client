@@ -1,0 +1,66 @@
+.dashboard h4.heading {
+  color: #f55777;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0;
+  font-family: "Kalam", cursive;
+  text-transform: capitalize;
+}
+.dashboard p.para {
+  font-family: "Schoolbell", cursive;
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.dashboard .css-sxh3gq-MuiAvatar-root-MuiAvatarGroup-avatar {
+  background-color: #ff9800 !important;
+}
+.dashboard .images{
+  height: 100%;
+  overflow: hidden;
+}
+.dashboard .images .css-o69gx8-MuiCardMedia-root {
+  transition: all .90s ease-in-out;
+  object-fit: contain !important;
+}
+.dashboard .images .css-o69gx8-MuiCardMedia-root:hover{
+  transform: scale(.9);
+}
+
+.dashboard .card {
+  box-shadow: 6px 6px 6px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 6px 6px 6px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 6px 6px 6px 2px rgba(0, 0, 0, 0.2);
+  transition: all .3s ease-in-out;
+}
+.dashboard .card:hover{
+  box-shadow: none;
+
+}
+.dashboard .discription {
+  font-size: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: 500;
+}
+.dashboard .discription span {
+  font-weight: 600;
+  font-size: 18px;
+}
+.dashboard .sort-info {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: 500;
+}
+@media screen and (max-width: 450px) {
+  .dashboard .box,
+  .dashboard .navIcon {
+    display: none !important;
+  }
+}
